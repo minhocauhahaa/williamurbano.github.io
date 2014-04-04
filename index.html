@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>William Urbano : Desenvolvedor de software</title>
+  <link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <!--[if IE]>
+    <script type="text/javascript">
+       var console = { log: function() {} };
+    </script>
+  <![endif]-->
+    
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>  
+  
+  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      var pepe = $.fn.fullpage({
+        slidesColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+        // anchors: ['home', 'jobs', 'skills', 'contact'],
+        // menu: "#menu"
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="section active" id="home">
+    <h1 id="logo">W<span class="hide">William Urbano</span></h1>
+    <div>William Urbano</div>
+    <div id="role">
+      Desenvolvedor de software
+      <!--
+      <ul id="menu">
+        <li data-menuanchor="home"><a href="#home">home</a></li>
+        <li data-menuanchor="skills"><a href="#skills">skills</a></li>
+        <li data-menuanchor="jobs"><a href="#jobs">jobs</a></li>
+        <li data-menuanchor="contact"><a href="#contact">contact</a></li>
+      </ul>
+      -->
+    </div>
+  </div>
+  <div class="section" id="skills">
+    <h1>MY SKILLS</h1>
+  </div>
+  <div class="section" id="jobs">
+    <div class="slide active"><h1>JOBS</h1></div>
+    <div class="slide"><h1>JOB 1</h1></div>
+    <div class="slide"><h1>JOB 2</h1></div>
+    <div class="slide"><h1>JOB 3</h1></div>
+  </div>
+  <div class="section" id="contact">
+    <h1>CONTACT</h1>
+  </div>
+</body>
+</html>
+
